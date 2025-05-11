@@ -30,12 +30,13 @@ body{
   width: 100%;
   left: 0;
   top: 0;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, height 0.2s;
 }
 
 .navbar-light {
   background-color: white;
   color: rgb(41, 45, 51);
+  height: 74px;
 }
 
 .navbar-light .header-logo-path{
@@ -69,6 +70,8 @@ body{
 }
 
 .header-logo{
+  display: flex;
+  align-items: center;
 padding: 25px 50px;
 border-right: 1px solid rgba(235, 235, 240, 0.2);
 height: 100%;

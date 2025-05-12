@@ -52,7 +52,7 @@ body{
   background-image: url('../img/header-bg.svg') ;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom -40px;
+  /*background-position: center bottom -40px;*/
   position: relative;
 }
 
@@ -111,7 +111,7 @@ height: 100%;
 .navbar-button {
    flex-shrink: 0;
    height: 100%;
-   padding: 25px 50px;
+   padding: 25px 38px;
 }
 
  .button {

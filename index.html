@@ -14,8 +14,59 @@
   <title>Aliance Production</title>
 </head>
 <body>
+  <div class="mobile-menu">
+<ul class="mobile-menu-nav">
+  <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-nav-link">О компании</a>
+     </li>
   
+  <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-nav-link">Контрактное производство</a>
+    <ul class="mobile-submenu">
+<li class="mobile-submenu-item">
+  <a href="#" class="">Автомобильная химия</a>
+</li>
+<li class="mobile-submenu-item">
+  <a href="#" class="">Бытовая химия</a>
+</li>
+<li class="mobile-submenu-item">
+  <a href="#" class="">Дезинфицирующие средства</a>
+</li>
+<li class="mobile-submenu-item">
+  <a href="#" class="">Пищевые аэрозоли</a>
+</li>
+<li class="mobile-submenu-item">
+  <a href="#" class="">Косметическая продукция</a>
+</li>
+<li class="mobile-submenu-item">
+  <a href="#" class="">Краски аэрозольные</a>
+</li>
+    </ul>
+   </li>
+  
+  <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-nav-link">Собственные торговые марки</a>
+    </li>
+ 
+  <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-nav-link">Новости</a>
+   </li>
+  
+  <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-nav-link">Контакты</a>
+ </li>
+
+  <!-- /.header-nav-item -->
+</ul>
+
+  </div>
+
+
+
   <nav class="navbar">
+
+    <a href="#" class="mobile-menu-toggle">  
+    <div class="mobile-menu-line"></div>
+    <div class="mobile-menu-line"></div>
+    <div class="mobile-menu-line"></div>
+  </a>
+    <!-- /.mobile-menu-toggle -->
+
 
 <!--  в виде ссылки лого-->
 <a href="./" class="header-logo">
@@ -61,7 +112,11 @@
 </div>
 <!-- /.header-phone -->
 <button class="navbar-button button">
-  Получить консультацию
+  <svg class="button-icon" width="24" height="24">
+  <use href="img/sprite.svg#phone"></use>
+</svg>
+  <span class="button-text"> Получить консультацию</span>
+ 
 </button>
   </nav>
   <!-- /.navbar -->

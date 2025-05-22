@@ -6,6 +6,9 @@ html {
   font-size: 16px;
 }
 
+.mobile-menu {
+  display: none;
+}
 
 
 @font-face {
@@ -26,9 +29,8 @@ body{
   font-family: "Noto Sans", sans-serif;
 }
 
-.mobile-menu {
-  display: none;
-}
+
+
 .container {
   max-width: 88.8125rem;
   margin: auto;
@@ -437,8 +439,74 @@ padding-top: .125rem;
       z-index: 2;
       background-color: #fff;
     padding-top: 5rem;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
     }
     .mobile-menu.is-open {
       display: block;
+    }
+    .mobile-menu-nav {
+      list-style: none;
+      padding: 0;
+
+    }
+    .mobile-menu-nav-item {
+      margin-bottom: 2rem;
+    }
+    
+    .mobile-menu-link {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 160%;
+      color: #292D33;
+    }
+    .mobile-submenu {
+      list-style: none;
+      padding: 0;
+      padding-left: 1rem;
+      margin-top: 1rem;
+
+    }
+    .mobile-submenu-link {
+      text-decoration: none;
+      color: #828A99;
+      font-size: 14px;
+      line-height: 160%;
+    }
+    .mobile-phone{
+      display: block;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 160%;
+      text-decoration-line: underline;
+       color: #292D33;
+       border-top: 1px solid #EBEBF0;
+       padding-top: 2rem;
+       margin-bottom: 1.5rem;
+    }
+    .mobile-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .mobile-info-address {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160%;
+      color: #292D33;
+      font-family: "Noto Sans", sans-serif;
+    }
+    .mobile-info-email {
+        text-decoration: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160%;
+      color: #292D33;
+      font-family: "Noto Sans", sans-serif;
     }
   }

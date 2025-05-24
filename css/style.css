@@ -53,7 +53,7 @@ body{
   left: 0;
   top: 0;
   transition: background-color 0.2s, height 0.2s;
-  margin-top: 1px;
+ /* margin-top: 1px;*/
 }
 
 .navbar-light {
@@ -414,6 +414,7 @@ html {
   height: 1px;
   background-color: #fff;
   width: 100%;
+  transition: transform 0.2s;
 }
 .mobile-menu-line:nth-child(2){
   width: 80%;
@@ -513,4 +514,20 @@ html {
       margin-top: 1.25rem;
       gap: .9375rem;
     }
+    
+    .close-menu .mobile-menu-line:nth-child(2){
+    display: none;
   }
+
+   .close-menu .mobile-menu-line:nth-child(1){
+    transform: rotate(45deg)
+    translateY(9px) ;
+  }
+
+  .close-menu .mobile-menu-line:nth-child(3){
+    transform: rotate(-45deg)
+    translateY(-9px);
+  }
+  }
+
+  

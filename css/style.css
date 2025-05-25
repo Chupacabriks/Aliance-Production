@@ -71,6 +71,10 @@ body{
   height: 2.75rem;
 }
 
+.logo {
+  display: none;
+}
+
 
 .navbar-light .header-logo-path{
   fill:  rgb(41, 45, 51);

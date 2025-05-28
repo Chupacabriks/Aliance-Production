@@ -379,10 +379,16 @@ cursor: pointer;
 }
 }
 
+@media (max-width: 1533px) {
+ html {
+  font-size: 13px;
+} 
+}
+
+
+
 @media (max-width: 1460){
-  html {
-    font-size: 13px;
-  }
+  
   .header-logo {
     padding: 2rem;
   }
@@ -399,10 +405,17 @@ max-width: 6rem;
   .header-phone{
     margin-right: 2rem;
   }
-
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1428px) {
+ html {
+  font-size: 12px;
+} 
+}
+
+
+
+@media (max-width: 1323px){
   
   .slider-buttons{
     display: flex;

@@ -17,14 +17,14 @@ html {
 
 @font-face {
     font-family: 'Bebas Neue Book';
-    src:url('../fonts/BebasNeueBook .woff') format('woff');
+    src: url('../fonts/BebasNeueBook .woff') format('woff');
     font-weight: normal;
     font-style: normal;
     }
 
     @font-face {
     font-family: 'Noto Sans';
-    src:url('../fonts/NotoSans.woff') format('woff');
+    src: url('../fonts/NotoSans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     }
@@ -154,6 +154,8 @@ height: 100%;
    padding: 1.5625rem 2.375rem;
 }
 
+
+
 .navbar-button .button-icon {
   display: none;
 }
@@ -271,7 +273,7 @@ padding-right: 1.125rem;
 color: rgb(41, 45, 51);
 font-size: 3.75rem;
 line-height: 120%;
-margin-top: 22..125rem;
+
  }
 
  .steps {
@@ -387,7 +389,7 @@ cursor: pointer;
 
 
 
-@media (max-width: 1460){
+@media (max-width: 1460px){
   
   .header-logo {
     padding: 2rem;
@@ -443,17 +445,11 @@ max-width: 6rem;
 }
 
 @media (max-width: 1040px){
-  .steps-buttons {
-    display: flex;
-  }
-}
-
-
-@media (max-width: 1040px){
   
 html {
   font-size: 12px;
 }
+
 .container{
   max-width: 60rem;
 }
@@ -595,6 +591,9 @@ html {
   .close-menu .mobile-menu-line:nth-child(3){
     transform: rotate(-45deg)
     translateY(-9px);
+  }
+  .steps-buttons {
+    display: flex;
   }
   }
 

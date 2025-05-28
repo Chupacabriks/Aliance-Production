@@ -436,6 +436,12 @@ max-width: 6rem;
   }
 }
 
+@media (max-width: 1132px){
+ html {
+  font-size: 11px;
+} 
+}
+
 @media (max-width: 1024px){
   .steps-buttons {
     display: flex;

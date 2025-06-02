@@ -58,7 +58,7 @@ const swiperSteps = new Swiper('.steps-slider', {
     768: {
       slidesPerView: 3,
     },
-    1040: {
+    1050: {
       slidesPerView: 4,
     },
 
@@ -84,7 +84,7 @@ const swiper = new Swiper('.features-slider', {
     768: {
       slidesPerView: 3,
     },
-    1040: {
+    1050: {
       slidesPerView: 4,
     },
     1323: {

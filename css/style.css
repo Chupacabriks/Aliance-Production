@@ -521,25 +521,29 @@ margin-bottom: 28.125rem;
 }
 
 .founder{
- position: relative;
+ position: relative; 
+ min-height: 41.25rem;
 }
+
 
 .founder-photo {
   position: absolute;
   left: 0;
   top: 0;
   width: 43%;
-  min-height: 41.25rem;
+  min-height: 100%;
   object-fit: cover;
 
 }
 .founder-content{
   max-width: 45rem;
 }
+ 
 .founder-content-wrapper {
   display: flex;
   justify-content: flex-end;
   padding-left: 43%;
+
 }
 
 .founder-text{
@@ -550,7 +554,56 @@ line-height: 160%;
 letter-spacing: 0%;
 }
 
+.clients-wrapper {
+  display: flex;
+  gap: 3.125rem;
+  padding-bottom: 9.375rem;
+}
 
+.clients-content {
+flex-basis: 50%;
+}
+.clients-list{
+  list-style: none;
+  padding: 0;
+  columns: 2 auto;
+}
+
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+color: rgb(41, 45, 51);
+font-size: 1rem;
+font-weight: 400;
+line-height: 160%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+
+.clients-logo-list{
+display: flex;
+flex-wrap: wrap;
+flex-shrink: 10;
+}
+.clients-logo-item{
+  flex-basis: 33%;
+  border: 1px solid #EBEBF0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  filter: grayscale(100%);
+}
+.clients-logo-item:hover{
+ filter: grayscale(0%);
+}
+.clients-logo {
+max-width: 100%;
+width: 4.375rem;
+height: 4.375rem;
+}
 @media (max-width: 1770px) {
  html {
   font-size: 14px;
@@ -620,6 +673,9 @@ max-width: 6rem;
   .card{
     flex-basis: 50%;
   }
+  .clients-content {
+flex-basis: 60%;
+}
  
 }
 
@@ -801,6 +857,11 @@ html {
   justify-content: center;
   padding-left: 0;
 }
+
+.clients-wrapper{
+  flex-direction: column;
+
+}
 }
 
   @media(max-width: 768px){
@@ -823,5 +884,10 @@ html {
     .header-content {
       padding-top: 2rem;
     }
-  
+  .clients-list{
+    columns: 1;
+  }
+  .clients-logo-item{
+    flex-basis: 50%;
+  }
   }

@@ -6,6 +6,9 @@ const logo = document.querySelector('.logo');
 const mMenuToggle = document.querySelector('.mobile-menu-toggle');
 const menu = document.querySelector('.mobile-menu');
 
+const modal = document.querySelector('.modal');
+const modalDialog = document.querySelector('.modal-dialog');
+
 const lightModeOn = (event) => {
   navbar.classList.add('navbar-light');
   logo.style.display = 'block';
@@ -108,22 +111,7 @@ const swiperBlog = new Swiper('.blog-slider', {
   }
 });
 
-
-/*const modalToggle = document.querySelectorAll('[data-toggle=modal]');
-const modalClose = document.querySelector('.modal-close')
-modalToggle.forEach((element) =>
-  element.addEventListener('click', (event) => {
-    event.preventDefault();
-    modal.classList.add('modal-is-open')
-  }));
-modalClose.addEventListener('click', (event) => {
-  event.preventDefault;
-  modal.classList.remove('modal-is-open')
-}
-)*/
-const modal = document.querySelector('.modal');
-const modalDialog = document.querySelector('.modal-dialog');
-
+//функция для переключения модального окна при клике на необходимкю кнопку
 document.addEventListener('click', (event) => {
   if (event.target.dataset.toggle == 'modal' ||
     event.target.parentNode.dataset.toggle == 'modal' || (!event.composedPath().includes(modalDialog) && modal.classList.contains('modal-is-open'))

@@ -9,16 +9,19 @@ const menu = document.querySelector('.mobile-menu');
 const modal = document.querySelector('.modal');
 const modalDialog = document.querySelector('.modal-dialog');
 
+const isFront = document.body.classList.contains('front-page')
+
+
+const changeNavHeight = (height) => {
+  navbar.style.height = height;
+}
+
 const lightModeOn = (event) => {
   navbar.classList.add('navbar-light');
-  logo.style.display = 'block';
-  logoLight.style.display = 'none';
 };
 
 const lightModeOff = (event) => {
   navbar.classList.remove('navbar-light');
-  logo.style.display = 'none';
-  logoLight.style.display = 'block';
 };
 
 
@@ -38,7 +41,10 @@ const closeMenu = (event) => {
 
 
 window.addEventListener('scroll', () => {
-  this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  this.scrollY > 1 ? changeNavHeight('4.625rem') : changeNavHeight('5.875rem');
+  if (isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
 });
 
 mMenuToggle.addEventListener('click', (event) => {

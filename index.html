@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Aliance Production</title>
 </head>
-<body>
+<body class="front-page">
   <div class="mobile-menu">
 <ul class="mobile-menu-nav">
   <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-link">О компании</a>
@@ -23,7 +23,7 @@
   <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-link">Контрактное производство</a>
     <ul class="mobile-submenu">
 <li class="mobile-submenu-item">
-  <a class='mobile-submenu-link' href="#" >Автомобильная химия</a>
+  <a class='mobile-submenu-link' href="/avto-him.html" >Автомобильная химия</a>
 </li>
 <li class="mobile-submenu-item">
   <a class='mobile-submenu-link' href="#" >Бытовая химия</a>
@@ -92,18 +92,11 @@
    </a>
 
 </div>
-
-
-
-
-
-
   </div>
 
 
 
   <nav class="navbar">
-
     <a href="#" class="mobile-menu-toggle">  
     <div class="mobile-menu-line"></div>
     <div class="mobile-menu-line"></div>
@@ -111,14 +104,13 @@
   </a>
     <!-- /.mobile-menu-toggle -->
 
-
 <!--  в виде ссылки лого-->
 <a href="./" class="header-logo">
 <svg class="logo-svg logo-light">
   <use href="img/sprite.svg#logo-light"></use>
 </svg>
 
-<svg class="logo-svg logo">
+<svg class="logo-svg logo-dark">
   <use href="img/sprite.svg#logo"></use>
 </svg>
 </a>
@@ -618,8 +610,11 @@
     <img src="img/bottle.png" alt="call to action" class="cta-img">
     <div class="cta-form-wrapper container">
       <form action="#" class="cta-form">
-        <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
+        <div class="cta-form-text-title">
+          <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
         <p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+        </div>
+        
         <div class="input-group-wrapper">
           <div class="input-group">
             <input 
@@ -671,7 +666,7 @@
 <address class="footer-info-address"> г. Мосвка, Холодильный пер. 4к1с8 </address>
 </div>
 
-<div class="footer-info footer-info-phone-icon">
+<div class="footer-info footer-info-email-icon">
   <svg class="phone-icon" width="24" height="24">
   <use href="img/sprite.svg#mail"></use>
 </svg>
@@ -705,7 +700,7 @@
   <h2 class="footer-menu-title">Контрактное производство</h2>
   <ul class="footer-menu-list footer-menu-column-2">
     <li class="footer-menu-item">
-      <a href="#" class="footer-menu-link">Автомобильная химия</a>
+      <a href="/avto-him.html" class="footer-menu-link">Автомобильная химия</a>
     </li>
     <li class="footer-menu-item">
       <a href="#" class="footer-menu-link">Бытовая химия</a>

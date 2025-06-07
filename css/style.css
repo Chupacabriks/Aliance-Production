@@ -1267,12 +1267,15 @@ max-width: 6rem;
   .clients-content {
 flex-basis: 60%;
 }
+.cta-img {
+  left: -152px;
+}
 .footer-menu-column-2 {
   margin-right: 0px;
 }
 .footer-menu-wrapper:nth-child(2){
 width: 100%;
-/* min-width: 124px; */
+
 }
 .footer-menu-wrapper:nth-child(3){
 width: 100%;
